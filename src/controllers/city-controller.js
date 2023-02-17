@@ -1,4 +1,4 @@
-const CityService = require("../services");
+const { CityService } = require("../services");
 
 const cityService = new CityService();
 
@@ -17,7 +17,6 @@ const create = async (req, res) => {
       error: {},
     });
   } catch (error) {
-    console.log("Something went wrong in the city controller");
     return res.status(500).json({
       data: {},
       success: false,
@@ -42,7 +41,6 @@ const destroy = async (req, res) => {
       error: {},
     });
   } catch (error) {
-    console.log("Something went wrong in the city controller");
     return res.status(500).json({
       data: {},
       success: false,
@@ -67,7 +65,6 @@ const update = async (req, res) => {
       error: {},
     });
   } catch (error) {
-    console.log("Something went wrong in the city controller");
     return res.status(500).json({
       data: {},
       success: false,
@@ -84,7 +81,7 @@ const update = async (req, res) => {
 
 const get = async (req, res) => {
   try {
-    const city = await cityService.updateCity(req.params.id);
+    const city = await cityService.getCity(req.params.id);
     return res.status(200).json({
       data: city,
       success: true,
@@ -92,7 +89,6 @@ const get = async (req, res) => {
       error: {},
     });
   } catch (error) {
-    console.log("Something went wrong in the city controller");
     return res.status(500).json({
       data: {},
       success: false,
