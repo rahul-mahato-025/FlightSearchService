@@ -1,7 +1,7 @@
 const { Airplane } = require("../models");
 
 class AirplaneRepository {
-  async getAirport(airplaneId) {
+  async getAirplane(airplaneId) {
     try {
       const airplane = await Airplane.findByPk(airplaneId);
       return airplane;
