@@ -4,7 +4,7 @@ const airportService = new AirportService();
 
 const get = async (req, res) => {
   try {
-    const airport = await airportService.getAirport(req.params.id);
+    const airport = await airportService.get(req.params.id);
     return res.status(200).json({
       data: airport,
       success: true,

@@ -1,14 +1,9 @@
+const CrudRepository = require("./crud-repository");
 const { Airport } = require("../models");
 
-class AirportRepository {
-  async getAirport(airportId) {
-    try {
-      const airport = await Airport.findByPk(airportId);
-      return airport;
-    } catch (error) {
-      console.log("Something went wrong in the airport repository layer.");
-      throw { error };
-    }
+class AirportRepository extends CrudRepository {
+  constructor() {
+    super(Airport);
   }
 }
 

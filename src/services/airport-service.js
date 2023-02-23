@@ -1,18 +1,10 @@
 const { AirportRepository } = require("../repositories");
+const CrudService = require("./crud-service");
 
-class AirportService {
+class AirportService extends CrudService {
   constructor() {
-    this.airportRepository = new AirportRepository();
-  }
-
-  async getAirport(airportId) {
-    try {
-      const airport = await this.airportRepository.getAirport(airportId * 1);
-      return airport;
-    } catch (error) {
-      console.log("Something went wrong in the airport service layer.");
-      throw { error };
-    }
+    const airportRepository = new AirportRepository();
+    super(airportRepository);
   }
 }
 
