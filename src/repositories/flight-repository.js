@@ -33,6 +33,31 @@ class FlightRepository {
     }
   }
 
+  async updateFlight(flightId, data) {
+    try {
+      const flight = await Flight.findByPk(flightId);
+
+      if (data.totalSeats) {
+        flight.totalSeats = data.totalSeats;
+      }
+
+      if (data.numSeats) {
+        flight.totalSeats -= data.numSeats;
+      }
+
+      if (data.price) {
+        flight.price = data.price;
+      }
+
+      flight.save();
+      return flight;
+    } catch (error) {
+      console.log("Something went wrong in the flight repository layer.");
+      console.log(error);
+      throw { error };
+    }
+  }
+
   async getFlight(flightId) {
     try {
       const flight = await Flight.findByPk(flightId);
