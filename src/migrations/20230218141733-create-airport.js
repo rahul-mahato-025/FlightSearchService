@@ -18,7 +18,7 @@ module.exports = {
         allowNull: false,
         onDelete: "CASCADE",
         references: {
-          model: "Cities",
+          model: "cities",
           key: "id",
           as: "cityId",
         },

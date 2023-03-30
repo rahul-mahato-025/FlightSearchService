@@ -17,6 +17,12 @@ module.exports = {
       departureAirportId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {
+          model: "airports",
+          key: "id",
+          as: "departureAirportId",
+        },
+        onDelete: "CASCADE",
       },
       airplaneId: {
         type: Sequelize.INTEGER,

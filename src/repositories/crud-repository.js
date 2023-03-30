@@ -41,15 +41,15 @@ class CrudRepository {
     }
   }
 
-  async get(modelId) {
-    try {
-      const result = await this.model.findByPk(modelId);
-      return result;
-    } catch (error) {
-      console.log("Something went wrong in the crud repo");
-      throw { error };
-    }
-  }
+  // async get(modelId) {
+  //   try {
+  //     const result = await this.model.findByPk(modelId);
+  //     return result;
+  //   } catch (error) {
+  //     console.log("Something went wrong in the crud repo");
+  //     throw { error };
+  //   }
+  // }
 
   async getAll() {
     try {

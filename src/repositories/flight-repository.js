@@ -1,5 +1,5 @@
 const { Op } = require("sequelize");
-const { Flight } = require("../models");
+const { Flight, Airport, City } = require("../models");
 
 class FlightRepository {
   #createFilter(data) {
@@ -60,9 +60,25 @@ class FlightRepository {
 
   async getFlight(flightId) {
     try {
-      const flight = await Flight.findByPk(flightId);
+      const flight = await Flight.findOne({
+        where: {
+          id: flightId,
+        },
+        include: [
+          {
+            model: Airport,
+            all: true,
+            attributes: ["id", "name"],
+            include: {
+              model: City,
+              attributes: ["name"],
+            },
+          },
+        ],
+      });
       return flight;
     } catch (error) {
+      console.log(error);
       console.log("Something went wrong in the flight repository layer.");
       throw { error };
     }
