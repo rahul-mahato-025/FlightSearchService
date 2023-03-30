@@ -41,8 +41,8 @@ class FlightRepository {
         flight.totalSeats = data.totalSeats;
       }
 
-      if (data.numSeats) {
-        flight.totalSeats -= data.numSeats;
+      if (data.totalSeats) {
+        flight.totalSeats = data.totalSeats;
       }
 
       if (data.price) {

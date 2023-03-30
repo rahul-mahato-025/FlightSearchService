@@ -1,0 +1,158 @@
+[33mcommit 221251abb2f81ea592eadedf32fa9f6680dbe8d7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Thu Mar 30 18:31:34 2023 +0530
+
+    added association betweent airport and flight model
+
+[33mcommit bd921334163480c3bed128cc5a88edae0781d5fc[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Mon Mar 20 19:58:18 2023 +0530
+
+    added update flight logic
+
+[33mcommit bbe99d451b0a3298a6572a13287ac0ad3e4ff809[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Thu Feb 23 22:32:54 2023 +0530
+
+    added flight middleware and error codes
+
+[33mcommit 39e265912b9de53635220309b5d27206bd6f7305[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Thu Feb 23 21:56:34 2023 +0530
+
+    added crud repository and crud service
+
+[33mcommit e5ac9cfc1e1c8609b615565620dfeb8ebd2309e5[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Wed Feb 22 23:32:34 2023 +0530
+
+    added flight create and get api
+
+[33mcommit 10c4b8456fa73bd184b3a627f18c94597b53a436[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Mon Feb 20 18:48:11 2023 +0530
+
+    added flights model
+
+[33mcommit 3a2896549fea64ad762fc97cf92486727a66d858[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sun Feb 19 00:59:35 2023 +0530
+
+    added airplane repository and service
+
+[33mcommit 4c8bc11536ddba33d28d2bff1f93b8e7e30601ee[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sun Feb 19 00:52:05 2023 +0530
+
+    added airplane model
+
+[33mcommit c98d3c367054003cc3c2b17bc00ce609a8cf4cf4[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sun Feb 19 00:35:47 2023 +0530
+
+    added get airport api
+
+[33mcommit 257de9f5dbecca711c04392fc7b9118f61a5a177[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sat Feb 18 21:29:28 2023 +0530
+
+    added seeder for airport
+
+[33mcommit e3dd3e798818f05b2503a2d706545e1960120ea3[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sat Feb 18 20:07:47 2023 +0530
+
+    added airport model
+
+[33mcommit 5309a4e04bae0e8edf01f8ef9c3599f4438075da[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sat Feb 18 19:43:37 2023 +0530
+
+    added get all cities with a filter
+
+[33mcommit 3d5123c51763a850d8b0ebcbaee6cc030dfe9968[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sat Feb 18 01:23:53 2023 +0530
+
+    added city routes
+
+[33mcommit 5ef8e1000769435d13b9cc3228e010c0d494ad42[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sat Feb 18 00:58:10 2023 +0530
+
+    completed city controllers
+
+[33mcommit 4e06e9451703e0889fff132da1e2709e2f75d3e8[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sat Feb 18 00:43:18 2023 +0530
+
+    completed city service and added error  logs to city repository
+
+[33mcommit 1529e91e6a4c7e19fe56de09e87dacf9734da04e[m
+Merge: 47fad21 208cd6e
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sat Feb 18 00:30:03 2023 +0530
+
+    Merge branch 'master' of github.com:rahul-mahato-025/FlightSearchService
+
+[33mcommit 47fad2176c686974e5c29028771abd14b9c51c66[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sat Feb 18 00:23:13 2023 +0530
+
+    completed city repository
+
+[33mcommit 208cd6e90fd31d5e6d747c579c3143b538ebbaef[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Sat Feb 18 00:23:13 2023 +0530
+
+    completed city repository
+
+[33mcommit aec4ff99e80990cb3b8cf17c1a06f02a5be5a899[m
+Merge: 90999a1 bd81851
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Fri Feb 17 20:45:02 2023 +0530
+
+    Merge branch 'master' of github.com:rahul-mahato-025/FlightSearchService
+
+[33mcommit 90999a12abe53fbc47a12f9199c9e2ef1ff4f86c[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Fri Feb 17 20:42:16 2023 +0530
+
+    added unique constraint to name of city model and started city repository
+
+[33mcommit bd81851a0ef308a9ed7cb9af4ab691708e0b270b[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Fri Feb 17 20:42:16 2023 +0530
+
+    added unique constraint to name of city model and started city repository
+
+[33mcommit c7e6186d45a41ef8844ec05f598497ace43b4e36[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Fri Feb 17 20:31:40 2023 +0530
+
+    added city model
+
+[33mcommit 289240696fa9ae0c27ba490da70ee061408b3418[m
+Merge: 507bfbd 21ab184
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Fri Feb 17 00:08:59 2023 +0530
+
+    Merge branch 'master' of github.com:rahul-mahato-025/FlightSearchService
+
+[33mcommit 507bfbd91df7f70e4d7dc10050d65628cdef8542[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Fri Feb 17 00:07:01 2023 +0530
+
+    added seqelize
+
+[33mcommit 21ab1847b6ccc546695c3b7b528cd51ca88e3801[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Fri Feb 17 00:07:01 2023 +0530
+
+    added seuqlize for creating database
+
+[33mcommit 2acf38074b625c666d9d8309d3193ee29f1fcadb[m
+Author: Rahul Mahato <mahatorahul025@gmail.com>
+Date:   Thu Feb 16 23:43:51 2023 +0530
+
+    basic express setup
